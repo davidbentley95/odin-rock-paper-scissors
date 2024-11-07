@@ -1,10 +1,10 @@
 //initialize variables
 let playerChoice = "";
 let computerChoice = "";
+let rockButton = document.getElementById("rock");
 
 //event handler function 
 function updatePlayerChoice(event) {
-    console.log(event)
     playerChoice = event.target.textContent;
     console.log(playerChoice);
 }
