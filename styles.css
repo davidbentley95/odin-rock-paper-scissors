@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #17153B;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    width: 40%;
+    background-color: #2E236C;
+    color: #C8ACD6;
+    padding: 200px 100px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
