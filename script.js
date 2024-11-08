@@ -50,6 +50,9 @@ function playingGame() {
         resultsText.textContent = "You LOSE!!";
         computerCounter++
     }
+
+    document.querySelector(".player-score").innerText = playerCounter;
+    document.querySelector(".computer-score").innerText = computerCounter;
 }
 
 function playerWins() {
