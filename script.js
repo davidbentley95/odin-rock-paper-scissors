@@ -14,7 +14,6 @@ let resultsText = document.querySelector(".results");
 //event handler function 
 function updatePlayerChoice(event) {
     playerChoice = event.target.textContent;
-    console.log("Player choice is: " + playerChoice);
     updateComputerChoice();
     playingGame();
 }
@@ -39,19 +38,18 @@ function updateComputerChoice() {
 
 function playingGame() {
 
-    playerChoiceText.textContent += playerChoice;
-    computerChoiceText.textContent += computerChoice;
+    playerChoiceText.textContent = playerChoice;
+    computerChoiceText.textContent = computerChoice;
     
     if(playerChoice === computerChoice) {
-        resultsText.textContent += "Draw, try again!"
+        resultsText.textContent = "Draw, try again!"
     } else if(playerWins()) {
-        resultsText.textContent += "You Win!!";
+        resultsText.textContent = "You Win!!";
         playerCounter++
     } else {
-        resultsText.textContent += "You LOSE!!";
+        resultsText.textContent = "You LOSE!!";
         computerCounter++
     }
-
 }
 
 function playerWins() {
