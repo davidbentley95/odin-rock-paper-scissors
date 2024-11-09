@@ -8,18 +8,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Tiny5", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 60px;
 
 }
 
 p, span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .welcome, .instructions {
@@ -34,6 +35,7 @@ p, span {
     text-align: center;
     border: 10px solid black;
     border-radius: 15px;
+    background-color: #01204E;
 }
 
 .score-box {
@@ -49,3 +51,23 @@ p, span {
     width: 50%;
 }
 
+.game-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+button {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    flex: 1;
+    background-color: #F85525;
+}
+
+button:hover {
+    background-color: #FAA968;
+}
