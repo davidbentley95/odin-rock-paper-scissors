@@ -9,21 +9,21 @@
 <body>
     <div class="game-container">
         <h1>Rock, Paper, Scissors</h1>
-        <p class="welcome player">Welcome to Rock, Paper, Scissors!</p>
-        <p>Choose your weapon below and fight the computer!</p>
+        <p class="welcome">Welcome to Rock, Paper, Scissors!</p>
+        <p class="instructions">Choose your weapon below and fight the computer!</p>
         <div class="score-box">
             <span>Player Score:</span><span>Computer Score:</span><br>
-            <span class="player-score"></span><span class="computer-score"></span>
+            <span class="player-score">0</span><span class="computer-score">0</span>
         </div>
-        <button id="rock" class="choice-selector">Rock</button>
-        <button id="paper" class="choice-selector">Paper</button>
-        <button id="scissors" class="choice-selector">Scissors</button>
+        <div class="game-buttons">
+            <button id="rock" class="choice-selector">Rock</button>
+            <button id="paper" class="choice-selector">Paper</button>
+            <button id="scissors" class="choice-selector">Scissors</button>
+        </div>
         <div class="game-text">
             <p>You chose: <span class="player-choice"></span></p>
             <p>Computer chose: <span class="computer-choice"></span></p>
             <p>Results: <span class="results"></span></p>
-
-
         </div>
     </div>
     <script src="script.js"></script>

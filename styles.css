@@ -11,7 +11,22 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-size: 48px;
+
+}
+
+p, span {
+    font-size: 1.2rem;
+}
+
+.welcome, .instructions {
+    margin-top: 0;
+}
+
 .game-container {
+    display: flex;
+    flex-direction: column;
     width: 40%;
     background-color: #2E236C;
     color: #C8ACD6;
@@ -22,13 +37,15 @@ body {
 }
 
 .score-box {
-    display: flex;
+    display: none;
     flex-wrap:wrap;
-    width: 20em;
+    align-self: center;
+    width: 100%;
     margin-bottom: 15px;
 }
 
 .score-box > * {
     flex-grow: 1;
-    width: 10em;
+    width: 50%;
 }
+

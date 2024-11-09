@@ -16,6 +16,7 @@ function updatePlayerChoice(event) {
     playerChoice = event.target.textContent;
     updateComputerChoice();
     playingGame();
+    changeGameTextDisplay();
 }
 
 //add event listeners 
@@ -61,4 +62,10 @@ function playerWins() {
         return true;
     }
 
+}
+
+function changeGameTextDisplay() {
+    document.querySelector(".welcome").style.display = "none";
+    document.querySelector(".instructions").style.display = "none";
+    document.querySelector(".score-box").style.display = "flex";
 }
