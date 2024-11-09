@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,6 @@ body {
 
 h1 {
     font-size: 60px;
-
 }
 
 p, span {
@@ -30,9 +29,8 @@ p, span {
     display: flex;
     flex-direction: column;
     width: 40%;
-    padding: 200px 100px;
+    padding: 10vh 5vw;
     text-align: center;
-
     background-color: #01204E;
 }
 
@@ -88,4 +86,24 @@ button:hover {
 
 .game-text {
     display: none;
+}
+
+/* Media query to handle smaller screens */
+
+@media (max-width: 770px) {
+
+    h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    p, span {
+        font-size: 1.3rem;
+    }
+
+    .game-container {
+        padding: 5vh 10vw;
+        width: 60%;
+    }
+    
 }
