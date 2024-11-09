@@ -10,6 +10,7 @@ body {
     font-weight: 400;
     font-style: normal;
     color: white;
+    background-color:#FAA968
 }
 
 h1 {
@@ -31,8 +32,7 @@ p, span {
     width: 40%;
     padding: 200px 100px;
     text-align: center;
-    border: 10px solid black;
-    border-radius: 15px;
+
     background-color: #01204E;
 }
 
