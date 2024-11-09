@@ -1,5 +1,3 @@
-
-
 body {
     margin: 0;
     padding: 0;
@@ -41,6 +39,7 @@ p, span {
 .score-box > * {
     flex-grow: 1;
     width: 50%;
+
 }
 
 .game-buttons {
