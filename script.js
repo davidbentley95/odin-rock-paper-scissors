@@ -39,6 +39,7 @@ function updateComputerChoice() {
 
 function playingGame() {
 
+    displayRestartButton();
     playerChoiceText.textContent = playerChoice;
     computerChoiceText.textContent = computerChoice;
     
@@ -68,4 +69,9 @@ function changeGameTextDisplay() {
     document.querySelector(".welcome").style.display = "none";
     document.querySelector(".instructions").style.display = "none";
     document.querySelector(".score-box").style.display = "flex";
+    document.querySelector(".game-text").style.display = "block";
+}
+
+function displayRestartButton() {
+    document.querySelector(".restart").style.display = "inline-block";
 }
