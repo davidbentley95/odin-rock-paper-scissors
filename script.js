@@ -1,7 +1,3 @@
-//next is to add game logic and control flow (maybe add function that calls update computer choice then runs the checks?)
-//maybe the above function runs onClick of the button?
-//function to check if player won?
-
 //initialize variables
 let playerChoice = "";
 let computerChoice = "";
